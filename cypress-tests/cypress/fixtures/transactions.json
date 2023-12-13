@@ -1,0 +1,19 @@
+{
+  "invalidTransactionError": {
+    "msg": "Invalid value",
+    "param": "amount",
+    "location": "body"
+  },
+  "testTransaction": {
+    "id": "D4a44CsAh2M",
+    "uuid": "632f36cd-b558-4fa9-ac54-33310f9df51f",
+    "source": "RskoB7r4Bic",
+    "amount": "39390",
+    "description": "Payment: t45AiwidW to qywYp6hS0U",
+    "privacyLevel": "private",
+    "receiverId": "qywYp6hS0U",
+    "senderId": "t45AiwidW",
+    "balanceAtCompletion": "12468",
+    "status": "pending"
+  }
+}

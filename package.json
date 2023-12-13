@@ -1,0 +1,30 @@
+{
+  "name": "qa-js-internship",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "open:e2e": "yarn workspace js-internship-cypress cypress open",
+    "cypress:api": "yarn workspace js-internship-cypress open:api",
+    "cypress:e2e": "yarn workspace js-internship-cypress test:e2e",
+    "cypress:report": "yarn workspace js-internship-cypress report",
+    "playwright:api": "yarn workspace js-internship-playwright test:api",
+    "playwright:e2e": "yarn workspace js-internship-playwright test:e2e",
+    "playwright:report": "yarn workspace js-internship-playwright report",
+    "postinstall": "yarn workspace js-internship-playwright install",
+    "supertest:api": "yarn workspace js-internship-supertest test",
+    "webapp:start": "yarn workspace js-internship-web-app start"
+  },
+  "resolutions": {
+    "@babel/compat-data": "7.9.0",
+    "@types/express": "4.17.2",
+    "@types/express-serve-static-core": "4.17.2"
+  },
+  "workspaces": [
+    "cypress-tests",
+    "playwright-tests",
+    "supertest",
+    "webapp"
+  ]
+}

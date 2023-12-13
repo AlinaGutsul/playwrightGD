@@ -1,0 +1,18 @@
+{
+  "name": "js-internship-cypress",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "open:e2e": "cypress open",
+    "open:api": "cypress open --config-file cypress-api.config.js",
+    "report": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/mochawesome-report/output.json && marge cypress/report/mochawesome-report/output.json --reportDir ./cypress/report/mochawesome-report --inline",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "test:e2e": "cypress run",
+    "test:api": "cypress run --config-file cypress-api.config.js"
+  },
+  "dependencies": {
+    "cypress": "^10.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1"
+  }
+}

@@ -1,0 +1,29 @@
+# dependencies
+node_modules
+
+.DS_Store
+/cypress
+
+# yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+
+# Log files
+*.log
+
+## Cypress
+**/screenshots
+**/mochawesome-report
